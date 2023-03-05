@@ -1,0 +1,134 @@
+.blue{
+	color: #4285F4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(Users/Umama/Downloads/Anza.jpg);
+    background-attachment: fixed;
+    background-position: right;
+    background-size: cover;
+    background-color: rgba(54,53,67,255);
+}
+
+nav {
+    display: flex;
+/*     justify-content: space-around; */
+    position: fixed;
+		text-align: center;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 50px;
+
+}
+
+#text-logo {
+/*     font-weight: bold; */
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 30px;
+    color: #f0df0b;
+		margin-top:10px ;
+    margin-left: 50px;
+
+
+}
+
+#text-logo span {
+    color: white;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    color: rgb(255, 255, 255);
+}
+
+ul li {
+    margin: 10px 15px;
+}
+#home{
+	margin-left: 90px;
+}
+ul li a {
+    font-size: larger;
+    color: red;
+    text-decoration: none;
+		margin-top: 10px;
+	
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    border-radius: 2px;
+    height: 3px;
+    bottom: -4px;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#intro {
+    position: absolute;
+    left: 5vw;
+    top: 35vh;
+    color: white;
+    font-size: 2.5rem;
+}
+
+#intro h1 #red {
+    color: red;
+}
+
+#intro h1 #green {
+    color: rgb(0, 209, 84);
+}
+#intro p{
+	font-size: 18px;
+	width:20vw;
+	
+}
+#home {
+    height: 95vh;
+}
+#social{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: auto;
+	align-items: center;
+	justify-content: space-around;
+	grid-gap: 20px;
+	backdrop-filter: blur(10px);
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	width: 80vw;
+	height: 15vh;
+	border-radius: 10px;
+	margin: auto;
+	justify-self: center;
+}
